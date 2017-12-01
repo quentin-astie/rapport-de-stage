@@ -1,0 +1,3 @@
+Markdown
+git+git://github.com/aleray/html5lib_typogrify.git
+git+git://github.com/aleray/markdown-figures.git
