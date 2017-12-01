@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<head>
+<meta charset='UTF-8'>
+<title></title>
+<link rel='stylesheet' href='stylesheet.css'>
+</head>
+
+<body>
+
+<div class="infos">
+  <h1>Médor</h1>
+  <p>Médor est un magazine coopératif belge d'enquêtes et de récits. Il parait trimestriellement et OSP est engagé dans le projet depuis le premier numéro. Ils font partie intégrante des membres fondateurs de Médor.</p>
+  <p>À chaque numéro, deux pilotes journalistiques prennent les rennes de la rédaction. La direction artistique est, quant à elle, confiée à un pilote visuel. Pour le numéro 9, Chloé Andries et Céline Gautier sont les deux journalistes en charge du pilotage éditorial et le pilote visuel est Philippe Capart, libraire bruxellois, propriétaire d'un fond de bande déssinée et spécialiste du sujet.</p>
+  <dl><dt>Grâce à&#x20;</dt><dd>Html2print</dd> <dd>Scribus</dd> <dd>Inkscape</dd> <dd>Fontforge</dd> <dd>Git</dd> <dd>Django CMS</dd> <dd>OSPkit</dd> <dd>Graphviz</dd> <dd>Nextcloud</dd> <dd>Etherpad</dd></dl>
+  <h2>www.medor.coop</h2>
+  <p>J'ai d'abord travaillé à la refonte du site web de Médor avec Alexandre. À l'aide de Graphviz, un logiciel open-source de visualisation et de manipulation de graphes selon des scripts, nous avons déssiné différents architectures de site. Les enjeux de la refonte de ce site comprenaient l'archivage et les modes de visualisation des contenus des numéros antérieurs dont seuls quelques articles sont publiés sur le site. Les informations générales relatives aux modes d'organisation et de publication de la coopérative devait également être mises à jour, synthétisées et regroupées sous des modes de navigation plus fluides. Enfin, se posait la question d'un mini-site concernant une nouvelle rubrique du journal : l'enquête ouverte. Cette enquête, encore soumise au développement et aux débats internes est supposé adopter l'attitude participative et contributive de l'open-source en proposant de mettre à disposition librement la documentation de l'enquête et d'y contribuer en ligne.</p>
+  <h2>numéro 9</h2>
+  <p>Le numéro 9 du magazine de Médor compte 17 articles en tout genre comprenant enquêtes, reportages, portraits et récits sur des sujets divers et variés en lien avec la culture et l'actualité belge. Pour chaque article, nous crééons un dossier indépendant comprenant un fichier html et un fichier css, tous les dossiers sont compilés dans un dossier supérieur qui comprend tous les scripts et les dépendances pour faire tourner html2print. Nous nous répartissons de cette manière les articles en travaillant chacun indépendamment sur un dossier. Le contenu des articles arrive dans des documents word, écrit puis corrigés par l'équipe éditoriale, stocké sur un cloud. Nous "coulons", selon l'expression locale, le contenu via un CMS (content manager system) installé sur le site de médor : www.medor.coop. De cette manière les articles sont déjà stockés en ligne, sous forme html. Ils sont par défaut vérouillés au visiteur, mais une option permet de les rendre public et accessible sur le site pour certains. Médor est avant tout un média papier même si la question se pose aujourd'hui de plus publier en ligne. Un script permet d'aller chercher le contenu en ligne via un identifiant et de le couler dans la mise en page du magazine. Pour chaque rubrique un css a déjà été écrit ce qui permet d'avoir immédiatement une vue d'ensemble de l'artice mis en page selon les styles habituels du magazine. Nous nous entretenons alors avec Philippe et Mortis, l'illustrateur choisi par Philippe pour illustrer les articles de ce numéro, sur son idée visuelle pour l'article. Nous intégrons ainsi les illustrations, via le CMS car elles font parties intégrante du contenu et doivent y être rattaché en cas de publication en ligne. Puis nous mettons au point l'idée de Philippe en travaillant la structure macro-typographique avec le fichier html, puis la micro-typographie et les styles via le css. Après plusieurs aller-retour entre graphistes, rédacteurs, illustrateurs et pilotes, une version définitive de l'article est validée et nous générons le pdf.</p>
+</div>
+
+<div class='git'>
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> enqueteke </p>
+  <p class='commit_date'>  2017-11-23 17:08:10  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> bouger la figcaption cornelia zeller dans le nombril </p>
+  <p class='commit_date'>  2017-11-20 16:20:37  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> dernier scaling d'images sur archives </p>
+  <p class='commit_date'>  2017-11-20 16:16:16  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> convertir les image pgn problemem </p>
+  <p class='commit_date'>  2017-11-19 19:49:26  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> passage de tout les pngs en jpg pcq html2print ne les aime pas! </p>
+  <p class='commit_date'>  2017-11-19 19:47:36  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> retirer le folio en p1 de sperme </p>
+  <p class='commit_date'>  2017-11-19 19:10:36  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> licence Florian Huet reportage sperme </p>
+  <p class='commit_date'>  2017-11-19 17:37:40  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> dernière corrections duferco edito bio </p>
+  <p class='commit_date'>  2017-11-19 15:47:16  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> sup style for licence de la petite frappe </p>
+  <p class='commit_date'>  2017-11-19 15:30:37  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> baseline grid issue on nombril fixed </p>
+  <p class='commit_date'>  2017-11-19 15:01:06  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> dernier calages sur la double de texte de photo </p>
+  <p class='commit_date'>  2017-11-19 14:57:40  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> go </p>
+  <p class='commit_date'>  2017-11-19 01:40:46  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> edito, moins longues colonnes </p>
+  <p class='commit_date'>  2017-11-19 01:16:10  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> une vrai page noire et blanc sur fulguro, ouf;,on a pas oublié </p>
+  <p class='commit_date'>  2017-11-19 01:15:28  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> internet maidaaa </p>
+  <p class='commit_date'>  2017-11-19 01:09:12  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> aubergine </p>
+  <p class='commit_date'>  2017-11-18 23:59:51  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Folio réparé </p>
+  <p class='commit_date'>  2017-11-18 23:57:58  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> fin pairi </p>
+  <p class='commit_date'>  2017-11-18 23:48:37  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> figloop 16 sur sperme + image corrigé && layout edito </p>
+  <p class='commit_date'>  2017-11-18 23:15:26  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> bio flamand </p>
+  <p class='commit_date'>  2017-11-18 22:53:13  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> corrections suite </p>
+  <p class='commit_date'>  2017-11-18 21:56:19  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> Pairi Daiza 3 </p>
+  <p class='commit_date'>  2017-11-18 19:22:30  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> padding on image numbering to avoid cut off </p>
+  <p class='commit_date'>  2017-11-18 16:49:37  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> Pairi Daiza 2 </p>
+  <p class='commit_date'>  2017-11-18 16:48:29  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> hershey bim </p>
+  <p class='commit_date'>  2017-11-18 16:42:05  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> bio, duferco, lahaye, teke, styles </p>
+  <p class='commit_date'>  2017-11-18 16:34:24  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> z-index on running titles éÃ& folios </p>
+  <p class='commit_date'>  2017-11-18 16:18:29  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> nouvelle tache dans le pli </p>
+  <p class='commit_date'>  2017-11-18 16:08:36  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> Pairi Daiza </p>
+  <p class='commit_date'>  2017-11-18 15:46:32  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> nombril post eddyÃ2 resize img </p>
+  <p class='commit_date'>  2017-11-18 15:44:24  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> un tout petit style pour un second paragraphe dans le footer de photo, pour signifier les légendes dates et aut </p>
+  <p class='commit_date'>  2017-11-18 14:38:33  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> photo quasi good </p>
+  <p class='commit_date'>  2017-11-18 14:12:17  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> nombril </p>
+  <p class='commit_date'>  2017-11-17 23:53:53  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> calages finaux enquêteke </p>
+  <p class='commit_date'>  2017-11-17 23:24:59  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> sperme  2 </p>
+  <p class='commit_date'>  2017-11-17 23:22:02  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> photo pas foireux </p>
+  <p class='commit_date'>  2017-11-17 23:21:15  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> nombril </p>
+  <p class='commit_date'>  2017-11-17 23:13:42  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> photo, calÃmé, plus le luxe d'une double en plus </p>
+  <p class='commit_date'>  2017-11-17 23:06:26  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> sperme fini </p>
+  <p class='commit_date'>  2017-11-17 20:38:51  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> enquêteke pour impression, titre en escalier </p>
+  <p class='commit_date'>  2017-11-17 20:13:30  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> enquêteke pour impression </p>
+  <p class='commit_date'>  2017-11-17 19:52:26  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> sperme </p>
+  <p class='commit_date'>  2017-11-17 19:34:55  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> ARchive + sperme def </p>
+  <p class='commit_date'>  2017-11-17 19:00:27  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> images bio </p>
+  <p class='commit_date'>  2017-11-17 18:22:32  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> enqueteke premier ministre sur deux lignes autour du titre </p>
+  <p class='commit_date'>  2017-11-17 18:14:20  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> couler le nombril :) </p>
+  <p class='commit_date'>  2017-11-17 18:13:22  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> font merge </p>
+  <p class='commit_date'>  2017-11-17 17:29:30  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> bio masse et correc duferco </p>
+  <p class='commit_date'>  2017-11-17 17:25:23  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> portrait travail titrage, passage de main à Antoine </p>
+  <p class='commit_date'>  2017-11-17 16:01:54  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> photo </p>
+  <p class='commit_date'>  2017-11-17 16:00:45  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> enqueteke </p>
+  <p class='commit_date'>  2017-11-17 15:45:20  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> photo avancement </p>
+  <p class='commit_date'>  2017-11-17 11:22:28  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> archives + sperme </p>
+  <p class='commit_date'>  2017-11-17 11:12:07  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> masse bio </p>
+  <p class='commit_date'>  2017-11-16 23:32:29  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> portrait pick up après coulage, incertion d'images </p>
+  <p class='commit_date'>  2017-11-16 23:17:42  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> enqueteke coulé mais pas callé </p>
+  <p class='commit_date'>  2017-11-16 22:58:28  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> finalll duferco </p>
+  <p class='commit_date'>  2017-11-16 17:40:01  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> final final post corrections Philippe et post relecture 2 Eddy </p>
+  <p class='commit_date'>  2017-11-16 17:39:19  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> sperme plus proche de la maquette de Florian </p>
+  <p class='commit_date'>  2017-11-16 17:34:41  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> photo </p>
+  <p class='commit_date'>  2017-11-16 15:59:23  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> dernier calages (j'espère bon dieu) </p>
+  <p class='commit_date'>  2017-11-16 15:58:29  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> reflow colonnes p3 aire libre </p>
+  <p class='commit_date'>  2017-11-16 15:36:25  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> merge branch aire-libre into master </p>
+  <p class='commit_date'>  2017-11-16 14:14:28  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> dernière (de mille) remods de layout sur aire libre </p>
+  <p class='commit_date'>  2017-11-16 13:38:45  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> coulage portrait </p>
+  <p class='commit_date'>  2017-11-16 13:29:32  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> calage des colonnes et triches sur le reportage sperme </p>
+  <p class='commit_date'>  2017-11-16 12:03:52  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> duferco callé </p>
+  <p class='commit_date'>  2017-11-16 11:55:43  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> aire libre plus comme les autres rubriques </p>
+  <p class='commit_date'>  2017-11-16 10:56:14  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> avancement duferco </p>
+  <p class='commit_date'>  2017-11-16 10:23:29  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> karel interview en oldfashion html2printmedorstyle grid parcequ'on sait pas pourquoi il y a ce bug de bord de colonne non affichable </p>
+  <p class='commit_date'>  2017-11-15 23:00:43  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> avancement duferco </p>
+  <p class='commit_date'>  2017-11-15 23:00:16  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> corrections archive eddyOk </p>
+  <p class='commit_date'>  2017-11-15 22:28:30  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> merge interview files, first layout track (left behind for tests) from branch 'karel-prémods </p>
+  <p class='commit_date'>  2017-11-15 19:24:49  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> redesign avocat + robots </p>
+  <p class='commit_date'>  2017-11-15 19:14:26  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> final tweaks </p>
+  <p class='commit_date'>  2017-11-15 17:36:31  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> corrections </p>
+  <p class='commit_date'>  2017-11-15 17:11:47  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> clean avocat </p>
+  <p class='commit_date'>  2017-11-15 17:06:34  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> nearing end of experiment on Karel </p>
+  <p class='commit_date'>  2017-11-15 17:04:00  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> [duferco] </p>
+  <p class='commit_date'>  2017-11-15 14:57:30  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> progressions sur sperme & médias </p>
+  <p class='commit_date'>  2017-11-15 14:49:40  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> [sexe] exception dans les x </p>
+  <p class='commit_date'>  2017-11-15 13:10:41  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> archiving </p>
+  <p class='commit_date'>  2017-11-15 13:09:19  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> fixing frame around shadow image p5 </p>
+  <p class='commit_date'>  2017-11-15 12:57:23  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> correc suite </p>
+  <p class='commit_date'>  2017-11-15 12:52:16  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> ground level for the head, headache with the rule--left pushing too far: .h12.lift-rule class in place </p>
+  <p class='commit_date'>  2017-11-15 12:14:08  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> du nouveau dans medias </p>
+  <p class='commit_date'>  2017-11-15 12:12:01  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> aire libre + images </p>
+  <p class='commit_date'>  2017-11-15 11:59:26  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> archives turning </p>
+  <p class='commit_date'>  2017-11-15 11:49:49  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> interview styles && aire libre more images </p>
+  <p class='commit_date'>  2017-11-15 11:36:54  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> titre en erbarre </p>
+  <p class='commit_date'>  2017-11-15 11:35:58  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> duferco mise en page 2 </p>
+  <p class='commit_date'>  2017-11-15 11:34:00  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> archives calages </p>
+  <p class='commit_date'>  2017-11-15 11:28:14  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> je pousse pour faire rentrer dans 7 pages, encore qqes efforts ... </p>
+  <p class='commit_date'>  2017-11-15 11:16:05  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> pleins de petits points dans le sperme </p>
+  <p class='commit_date'>  2017-11-14 23:29:26  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> changements sur Karel depuis discussions chemin de fer </p>
+  <p class='commit_date'>  2017-11-14 21:04:52  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> duferco mise en page </p>
+  <p class='commit_date'>  2017-11-14 20:48:47  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> styles on the 2nd page Karel </p>
+  <p class='commit_date'>  2017-11-14 18:30:20  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> dcommit sur edm même si on va changer la tache </p>
+  <p class='commit_date'>  2017-11-14 16:50:09  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> debut acier ! </p>
+  <p class='commit_date'>  2017-11-14 15:41:56  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> trous d'archives </p>
+  <p class='commit_date'>  2017-11-14 15:41:12  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> corrections placement images + intertitres aire libre </p>
+  <p class='commit_date'>  2017-11-14 12:42:37  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> ajout des cocotiers sur Médias </p>
+  <p class='commit_date'>  2017-11-14 12:33:38  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> coulage de la bd </p>
+  <p class='commit_date'>  2017-11-14 12:05:57  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> karel post corrections, clean styles for Aire Libre </p>
+  <p class='commit_date'>  2017-11-13 17:22:12  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> archives </p>
+  <p class='commit_date'>  2017-11-13 16:27:35  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> EDM calages </p>
+  <p class='commit_date'>  2017-11-13 15:44:44  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> ellipse sur la Career salle13 </p>
+  <p class='commit_date'>  2017-11-13 15:32:58  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> oe Erbarre bold et bold italique </p>
+  <p class='commit_date'>  2017-11-13 15:11:14  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> portfolio -> mise ne place de la structure </p>
+  <p class='commit_date'>  2017-11-13 14:50:15  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Corrects moment flamand </p>
+  <p class='commit_date'>  2017-11-13 14:32:08  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> rub-sexe FINI !! </p>
+  <p class='commit_date'>  2017-11-13 14:08:16  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> dernier calages air libre </p>
+  <p class='commit_date'>  2017-11-13 14:07:06  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> Aire libre aka algorithes et justice </p>
+  <p class='commit_date'>  2017-11-13 12:57:36  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> ajustements fulguro </p>
+  <p class='commit_date'>  2017-11-13 12:38:25  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Fix mirroir footer </p>
+  <p class='commit_date'>  2017-11-13 12:17:25  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> médias calés calés </p>
+  <p class='commit_date'>  2017-11-13 12:15:41  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> corrections à jouer -fulguro </p>
+  <p class='commit_date'>  2017-11-13 11:29:11  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> photo structure </p>
+  <p class='commit_date'>  2017-11-13 11:28:01  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> duferco coulé </p>
+  <p class='commit_date'>  2017-11-13 11:17:33  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> debug avec le lien less </p>
+  <p class='commit_date'>  2017-11-13 10:38:26  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> tache dégeu EDM </p>
+  <p class='commit_date'>  2017-11-13 09:38:37  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> coulage archives </p>
+  <p class='commit_date'>  2017-11-12 20:47:38  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> bon set de colonnes à caler pour EDM + bonne image de mortis, mais comment faire pour faire couler une image sur 2 pages ? </p>
+  <p class='commit_date'>  2017-11-12 19:17:06  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> id 252 </p>
+  <p class='commit_date'>  2017-11-12 18:12:45  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> archives suite </p>
+  <p class='commit_date'>  2017-11-12 18:10:59  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> début du flux archives </p>
+  <p class='commit_date'>  2017-11-12 18:07:16  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> start photo </p>
+  <p class='commit_date'>  2017-11-12 17:59:07  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> start photo </p>
+  <p class='commit_date'>  2017-11-12 17:45:11  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> essai de sortie de reportage-archives media </p>
+  <p class='commit_date'>  2017-11-12 17:36:23  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> add photo </p>
+  <p class='commit_date'>  2017-11-12 16:49:43  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> archives come on </p>
+  <p class='commit_date'>  2017-11-12 15:27:43  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> merging styles </p>
+  <p class='commit_date'>  2017-11-12 10:18:53  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> z-index tache </p>
+  <p class='commit_date'>  2017-11-10 20:24:02  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> calage de EDM pré-tache, pré-mail </p>
+  <p class='commit_date'>  2017-11-10 20:06:48  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> Lavater styled second page </p>
+  <p class='commit_date'>  2017-11-10 18:52:26  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> 'first-letter' commentés dans les styles généraux pour virer toutes les lettrines' </p>
+  <p class='commit_date'>  2017-11-10 18:48:21  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> porter la plume dans la piscine </p>
+  <p class='commit_date'>  2017-11-10 18:41:56  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> moment flamand suite </p>
+  <p class='commit_date'>  2017-11-10 18:27:19  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> aire libre en cours </p>
+  <p class='commit_date'>  2017-11-10 17:54:18  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> nearing final v, reread </p>
+  <p class='commit_date'>  2017-11-10 17:23:25  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> rub-sexx </p>
+  <p class='commit_date'>  2017-11-10 17:21:47  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> edm coullage </p>
+  <p class='commit_date'>  2017-11-10 17:17:00  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> fulguro vers relecture </p>
+  <p class='commit_date'>  2017-11-10 16:33:34  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Fix footer </p>
+  <p class='commit_date'>  2017-11-10 16:32:33  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> interview, bon texte, quasi bon calages </p>
+  <p class='commit_date'>  2017-11-10 16:15:29  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Crédits rub à colorier plus petit </p>
+  <p class='commit_date'>  2017-11-10 15:59:55  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> fix du sup </p>
+  <p class='commit_date'>  2017-11-10 15:05:54  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Medor à colorier </p>
+  <p class='commit_date'>  2017-11-10 14:57:48  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Voyages de presse </p>
+  <p class='commit_date'>  2017-11-10 13:54:33  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> coollage -> EDm </p>
+  <p class='commit_date'>  2017-11-10 13:35:02  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> rubriques en Erbarre </p>
+  <p class='commit_date'>  2017-11-10 12:44:00  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> tub-sex | add glyph x altern on italic nobel version </p>
+  <p class='commit_date'>  2017-11-10 10:39:06  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> font rubrique test Vorgang merge </p>
+  <p class='commit_date'>  2017-11-09 22:56:58  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> font rubrique test Vorgang </p>
+  <p class='commit_date'>  2017-11-09 22:54:43  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> font rubrique test Vorgang </p>
+  <p class='commit_date'>  2017-11-09 22:49:51  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> nouvelles fonts </p>
+  <p class='commit_date'>  2017-11-09 22:33:17  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> interview, toute nouvelle 2e page, images en 8Ãe totalement différentes, noir noir avec découpes blanches </p>
+  <p class='commit_date'>  2017-11-09 18:23:53  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> un robot avocat décapité </p>
+  <p class='commit_date'>  2017-11-09 18:05:01  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> moment flamand </p>
+  <p class='commit_date'>  2017-11-09 17:59:08  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> retouches fulguro, medor à colorier, EDM (2) </p>
+  <p class='commit_date'>  2017-11-09 16:45:36  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> retouches fulguro, medor à colorier, EDM </p>
+  <p class='commit_date'>  2017-11-09 16:38:34  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> moment flamand </p>
+  <p class='commit_date'>  2017-11-09 16:24:55  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> début test titre aire libre </p>
+  <p class='commit_date'>  2017-11-09 14:27:33  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> code pour remplacer les x </p>
+  <p class='commit_date'>  2017-11-09 14:22:59  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Evenement "OnStoryLoaded" </p>
+  <p class='commit_date'>  2017-11-09 14:17:19  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> sexx pour alexandre 2 </p>
+  <p class='commit_date'>  2017-11-09 12:17:07  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> sexx pour alexandre </p>
+  <p class='commit_date'>  2017-11-09 11:12:13  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> filet sexx </p>
+  <p class='commit_date'>  2017-11-08 19:02:32  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> fix url to less.min processor </p>
+  <p class='commit_date'>  2017-11-08 18:23:14  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> modifs EDM </p>
+  <p class='commit_date'>  2017-11-08 18:19:16  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> karel with last image </p>
+  <p class='commit_date'>  2017-11-08 18:06:56  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> coulage medor à colorier! </p>
+  <p class='commit_date'>  2017-11-08 17:56:08  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> filet sex </p>
+  <p class='commit_date'>  2017-11-08 17:07:16  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> coulage EDM </p>
+  <p class='commit_date'>  2017-11-08 17:04:56  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> coulage algorithmes et justice </p>
+  <p class='commit_date'>  2017-11-08 16:29:05  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> retouches NL (2) </p>
+  <p class='commit_date'>  2017-11-08 15:46:40  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> retouches NL </p>
+  <p class='commit_date'>  2017-11-08 15:45:08  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> display; none last exergue moment flamand </p>
+  <p class='commit_date'>  2017-11-08 15:02:03  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> avancées NL </p>
+  <p class='commit_date'>  2017-11-08 13:53:39  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> corrections momentflamand </p>
+  <p class='commit_date'>  2017-11-08 11:46:20  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> fix url less.min.js in moment-flamand </p>
+  <p class='commit_date'>  2017-11-08 10:50:04  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> coulage momemt flamand + finitions fulguro </p>
+  <p class='commit_date'>  2017-11-07 19:29:57  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> career salle13 coullante </p>
+  <p class='commit_date'>  2017-11-07 16:15:27  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Karel </p>
+  <p class='commit_date'>  2017-11-07 08:18:57  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Reportage sperme fixé </p>
+  <p class='commit_date'>  2017-11-07 08:18:11  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> ajustements(2) fulguro </p>
+  <p class='commit_date'>  2017-11-06 17:47:13  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> ajustements fulguro </p>
+  <p class='commit_date'>  2017-11-06 16:35:37  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> coulage reportage-sperme </p>
+  <p class='commit_date'>  2017-11-03 17:18:15  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> javascript replace x to sexx </p>
+  <p class='commit_date'>  2017-11-02 16:23:22  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> rubrique sexe modifs </p>
+  <p class='commit_date'>  2017-11-01 16:46:22  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> rub sexe </p>
+  <p class='commit_date'>  2017-11-01 13:40:48  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> black questions in century schoolbook, last page, and an extra page for editor to see what to cut out </p>
+  <p class='commit_date'>  2017-11-01 12:56:36  </p></div>
+
+  <div class='commit'><p class='commit_author'>Antoine Gelgon </p>
+  <p class='commit_message'> changement répertoire / nobel feature </p>
+  <p class='commit_date'>  2017-11-01 12:56:32  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Rub fulguro + footer général + pas de lettrines rubriques </p>
+  <p class='commit_date'>  2017-11-01 12:48:06  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> compilation instructions for qtwebkit-5.212.0-alpha2 rebuilt from arch for *ian systems </p>
+  <p class='commit_date'>  2017-11-01 11:32:11  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Karel in the place </p>
+  <p class='commit_date'>  2017-11-01 10:25:43  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> mise-en-pages fulguro point </p>
+  <p class='commit_date'>  2017-10-31 18:09:47  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> changes since todays pilot meet, negatif medallions, image sizes, move aside 1 </p>
+  <p class='commit_date'>  2017-10-31 17:21:14  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Test css grid karel </p>
+  <p class='commit_date'>  2017-10-31 17:18:26  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> changements de la reu </p>
+  <p class='commit_date'>  2017-10-31 15:29:09  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> corrections dans le less </p>
+  <p class='commit_date'>  2017-10-31 11:00:49  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> liaisons fonts </p>
+  <p class='commit_date'>  2017-10-31 10:44:15  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Reworked the opentype feature thanks to Sophie </p>
+  <p class='commit_date'>  2017-10-31 10:23:36  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> medaillons, négatifs et essais de filtres css (qui rasterisent le texte) / SVG (qui ne fonctionnent pas) OSPkit où est tu? </p>
+  <p class='commit_date'>  2017-10-30 18:29:27  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> x en outils de la rubriaue sexe. Merci Sophie! </p>
+  <p class='commit_date'>  2017-10-30 17:50:28  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> ré-organisation des fonts bdsm </p>
+  <p class='commit_date'>  2017-10-30 12:07:01  </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> fonts bdsm + modifs styles </p>
+  <p class='commit_date'>  2017-10-30 11:02:53  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> karel, starting to compose with images </p>
+  <p class='commit_date'>  2017-10-27 19:04:15 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> avancées rub-sexe </p>
+  <p class='commit_date'>  2017-10-26 16:52:34 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> image from the silhouettes, not on left page yet </p>
+  <p class='commit_date'>  2017-10-25 20:55:49 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> start on karl-a interview layout </p>
+  <p class='commit_date'>  2017-10-25 18:36:51 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> rub-sexe ajout titre </p>
+  <p class='commit_date'>  2017-10-25 18:13:12 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> génération font medor9 + integration </p>
+  <p class='commit_date'>  2017-10-25 16:48:16 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Fix previous commit </p>
+  <p class='commit_date'>  2017-10-25 14:42:03 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> adaptation du fichier HTML karel anthonissen </p>
+  <p class='commit_date'>  2017-10-25 14:39:16 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> connecting to data-id=266 </p>
+  <p class='commit_date'>  2017-10-25 14:24:47 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> démarrage d'une fonte de dessins </p>
+  <p class='commit_date'>  2017-10-25 12:00:46 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Fix fulgoro assets links </p>
+  <p class='commit_date'>  2017-10-25 00:38:26 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> fix link </p>
+  <p class='commit_date'>  2017-10-25 00:26:50 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Gros nettoyage: </p>
+  <p class='commit_date'>  2017-10-24 23:07:31 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> nouveau script + ajout svg </p>
+  <p class='commit_date'>  2017-10-24 12:19:51 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> titrage rouyer jeunesse </p>
+  <p class='commit_date'>  2017-10-24 10:21:28 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> rub sex </p>
+  <p class='commit_date'>  2017-10-23 17:57:27 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Changement sexe + fulguro </p>
+  <p class='commit_date'>  2017-10-23 17:55:56 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Do not track what doesn't need to be tracked </p>
+  <p class='commit_date'>  2017-10-23 16:16:48 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'>  reimport des fichiers du 8 </p>
+  <p class='commit_date'>  2017-10-23 16:13:13 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> création des layout </p>
+  <p class='commit_date'>  2017-10-09 14:30:14 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> executables in both python 2 and 3 </p>
+  <p class='commit_date'>  2017-04-03 20:49:05 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> cleaned css for fonts, and renamed pure css with .css </p>
+  <p class='commit_date'>  2017-01-23 23:22:21  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Boilerplate </p>
+  <p class='commit_date'>  2017-01-23 22:04:04  </p></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<head>
+<meta charset='UTF-8'>
+<title></title>
+<link rel='stylesheet' href='stylesheet.css'>
+</head>
+
+<body>
+
+<div class="infos">
+  <h1>Balsa</h1>
+  <p>Le théâtre de la Balsamine est un théâtre de Bruxelles, fondé en 1974 et installé depuis 1981 dans les anciennes casernes Dailly à Schaerbeek. OSP travaille avec ‘la Balsa’ depuis 2011. Ils gèrent toute l’identité graphique du théâtre et la renouvellent à chaque saison.</p>
+  <p>Pour la saison 2017-2018, ils ont cuisiné une nouvelle identité en collaboration avec l’artiste bruxelloise Julie Kern Donck avec, en entrée, un nouveau site internet, un programme imprimé et une affiche de saison. Au moment où j’arrive chez OSP, nous devons réaliser des flyers et des affiches pour les premiers spectacles. On me confie également la réalisation d’une nouvelle bannière ainsi que la création d’éléments signalétiques pour le théâtre.</p>
+  <dl><dt>Grâce à&#x20;</dt><dd>Html2print</dd> <dd>Scribus</dd> <dd>Inkscape</dd> <dd>Git</dd> <dd>OSPkit</dd> <dd>Nextcloud</dd> <dd>Etherpad</dd></dl>
+  <h2>flyers et affiches</h2>
+  <p>	La saison 2017-2018 sur le point de commencer, la Balsa passe commande à OSP de flyers d’invitations aux trois premiers spectacles joués au théâtre. L’idée de pouvoir rassembler tous les flyers bout à bout sur une grille de 3 par 4 pour former une grande image s’impose rapidement. Nous travaillons sur html2print. Le contenu des flyers - titre, dates bible et crédits de la pièce - proviennent de fichiers fournis par la Balsa, déjà balisés en markdown. Ainsi nous reprenons une grande partie des styles déjà appliqués sur la version papier du programme et ajustons selon les besoins et envies. Lors d’un après-midi, nous éditons la feuille de style css collaborativement sur un pad et son contenu est récupéré puis appliqué chaque seconde via un script sur la mise-en-page, ce qui nous permet d’éditer le flyer à plusieurs. Le verso du flyer, composé comme un collage de différentes images est finalement réalisé sur scribus par soucis de dextérité technologique. Nous devons ensuite réaliser des affiches pour ces trois premiers spectacles et je commence à travailler sur un premier gabarit inkscape avec Sarah avant d’être rapidement emporté par un autre chantier laissant en définitive Sarah seule au manettes de cette affiche.</p>
+  <h2>bannière et signalétique</h2>
+  <p>Inchangée depuis quelques années la bannière extérieure du théâtre souhaite être renouvellée par l’équipe de la Balsa. OSP me confie alors ce chantier. J’imagine une bannière fonctionnant comme une frise qui reprendrait les différents logos du théâtre crées depuis la première identité d’OSP. Au cours des saisons ils ont modelé et re-modelé le logo au gré des représentations et collaborations, comme avec Karl Nawrott. Parti de l’ancien logo du théâtre celui-ci a subi des évolutions et des ramification, un peu à la manière d’un fichier git : modifié, versionné puis fusionné. Je termine la frise par une toute nouvelle et dernière version du logo que je dessine sur inkscape. La typographie de la Balsa, Ume, dont j’ignore l’origine, est, comme le logo, modifiée et versionnée à chaque saison. Sa dernière version déssinée par Antoine, est conçue à partir d’un squelette à double tracé. On peut en générer différentes graisses à partir de la largeur du double-tracé. En contact avec l’équipe de communication du théâtre Monica Gomes et Fanny Arvieu, je dessine, toujours sur inkscape, des éléments de signalétique pour habiller les portes du théâtre. Ce sont des noms d’anciens spectacles écrits avec la Ume double-tracé d’Antoine puis découpés avec un plotter numérique que je colle sur les portes des loges. À cela s’ajoute un caisson lumineux comprenant le mot « billetterie » dont j’étais persuadé qu’il s’écrivait « billeterie » avant de découvrir, presque trop tard, qu'en belge, comme en français, on y doublait le t.</p>
+</div>
+
+<div class='git'>
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> ajout du T manquant à billetterie </p>
+    <p class='commit_date'>  2017-11-13 21:29:51  </p></div>
+
+    <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+    <p class='commit_message'> precision in filename </p>
+    <p class='commit_date'>  2017-10-27 16:03:19 </p></div>
+
+    <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+    <p class='commit_message'> rasterised logo version black, white, multi sizes </p>
+    <p class='commit_date'>  2017-10-27 15:59:33 </p></div>
+
+    <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+    <p class='commit_message'> totem lettre + news leftovers </p>
+    <p class='commit_date'>  2017-10-26 22:51:49 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> découpes vinyle </p>
+    <p class='commit_date'>  2017-10-26 17:08:29 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> bannière + nouveau logo </p>
+    <p class='commit_date'>  2017-10-26 15:31:38 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> correction dates </p>
+    <p class='commit_date'>  2017-10-24 12:27:53 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> dernière corrections </p>
+    <p class='commit_date'>  2017-10-24 11:37:29 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> enveloppe c5 mises à jour </p>
+    <p class='commit_date'>  2017-10-17 12:27:38 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> affiches lettre sis et fortunes corrigees </p>
+    <p class='commit_date'>  2017-10-16 18:13:26 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> nouvelle affiche spaghetti </p>
+    <p class='commit_date'>  2017-10-10 17:49:59 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> une affiche spaghetti </p>
+    <p class='commit_date'>  2017-10-10 17:33:31 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> rearengement images </p>
+    <p class='commit_date'>  2017-10-10 15:21:58 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> totem lettre et autres </p>
+    <p class='commit_date'>  2017-10-09 17:21:12 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> manage iceberg </p>
+    <p class='commit_date'>  2017-10-09 16:03:40 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> menage </p>
+    <p class='commit_date'>  2017-10-09 15:59:49 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> affiches clean et affiche lettre </p>
+    <p class='commit_date'>  2017-10-09 15:39:58 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> ajout d'un modele affiche totem </p>
+    <p class='commit_date'>  2017-10-09 11:18:58 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> deocupes en blanc </p>
+    <p class='commit_date'>  2017-09-21 14:51:09 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> recto flyers Balsa </p>
+    <p class='commit_date'>  2017-09-20 14:34:52 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> damier sur calque et pas sur le gabarit </p>
+    <p class='commit_date'>  2017-09-19 00:56:40 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> damier sur calque et pas sur le gabarit </p>
+    <p class='commit_date'>  2017-09-19 00:17:52 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> damier sans transparence </p>
+    <p class='commit_date'>  2017-09-18 23:34:37 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> rectos </p>
+    <p class='commit_date'>  2017-09-18 22:14:38 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> rectos scrivus </p>
+    <p class='commit_date'>  2017-09-18 17:43:30 </p></div>
+
+    <div class='commit'><p class='commit_author'>Balsa </p>
+    <p class='commit_message'> oracle invit 2 </p>
+    <p class='commit_date'>  2017-09-14 15:15:36 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> correction avenue </p>
+    <p class='commit_date'>  2017-09-14 12:41:24 </p></div>
+
+    <div class='commit'><p class='commit_author'>Balsa </p>
+    <p class='commit_message'> agneau pour invit </p>
+    <p class='commit_date'>  2017-09-14 12:29:01 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> dernières corrections flyer verso et rectos sur scribus </p>
+    <p class='commit_date'>  2017-09-14 11:46:14 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> corrections fanny </p>
+    <p class='commit_date'>  2017-09-13 17:46:30 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> ensemble rectos flyers </p>
+    <p class='commit_date'>  2017-09-12 18:03:21 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> vecto bandeaux </p>
+    <p class='commit_date'>  2017-09-12 17:49:28 </p></div>
+
+    <div class='commit'><p class='commit_author'>Balsa </p>
+    <p class='commit_message'> Delete IMG_3955.jpg </p>
+    <p class='commit_date'>  2017-09-12 17:20:31 </p></div>
+
+    <div class='commit'><p class='commit_author'>Balsa </p>
+    <p class='commit_message'> test photo </p>
+    <p class='commit_date'>  2017-09-12 17:20:09 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> fonts css </p>
+    <p class='commit_date'>  2017-09-12 14:00:33 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> pathfinder union tarif et bandeau flyer resizé et rééquilibre recto </p>
+    <p class='commit_date'>  2017-09-12 12:49:31 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> pack-com + billeterie </p>
+    <p class='commit_date'>  2017-09-12 12:00:45 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> pour pack com </p>
+    <p class='commit_date'>  2017-09-11 11:50:27 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> layouts2 </p>
+    <p class='commit_date'>  2017-09-08 12:07:44 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> nouveaux md+layout </p>
+    <p class='commit_date'>  2017-09-07 18:04:32 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> nouveaux svg </p>
+    <p class='commit_date'>  2017-09-07 17:17:37 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> bandeau replacé </p>
+    <p class='commit_date'>  2017-09-07 16:54:32 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> logos +gros </p>
+    <p class='commit_date'>  2017-09-07 16:49:48 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> en : fr </p>
+    <p class='commit_date'>  2017-09-07 16:32:48 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau-vecto </p>
+    <p class='commit_date'>  2017-09-07 16:12:22 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> marges oracles </p>
+    <p class='commit_date'>  2017-09-07 16:02:26 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> tarifbarvecto clean </p>
+    <p class='commit_date'>  2017-09-07 15:58:01 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> tarifbarvecto clean </p>
+    <p class='commit_date'>  2017-09-07 15:57:38 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> merge </p>
+    <p class='commit_date'>  2017-09-07 15:53:51 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> damier à tour et racalibrage des rectos </p>
+    <p class='commit_date'>  2017-09-07 15:51:39 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> corrections verso </p>
+    <p class='commit_date'>  2017-09-07 15:48:10 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> modifications textes </p>
+    <p class='commit_date'>  2017-09-07 13:25:42 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> font + placements images </p>
+    <p class='commit_date'>  2017-09-07 13:00:40 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> plume non coupée </p>
+    <p class='commit_date'>  2017-09-07 12:52:41 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> h1 font </p>
+    <p class='commit_date'>  2017-09-07 12:40:08 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> jointures images </p>
+    <p class='commit_date'>  2017-09-07 12:26:59 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> font correcte pour h1 </p>
+    <p class='commit_date'>  2017-09-07 12:21:15 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> dossier pdf </p>
+    <p class='commit_date'>  2017-09-07 10:07:10 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau images </p>
+    <p class='commit_date'>  2017-09-07 10:06:15 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> placement images versor </p>
+    <p class='commit_date'>  2017-09-06 23:58:07 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> image position </p>
+    <p class='commit_date'>  2017-09-06 19:18:24 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> new logo et damiera5 </p>
+    <p class='commit_date'>  2017-09-06 19:14:53 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> verso oracle </p>
+    <p class='commit_date'>  2017-09-06 19:14:26 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> fonds damier </p>
+    <p class='commit_date'>  2017-09-06 18:05:16 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> sous parties </p>
+    <p class='commit_date'>  2017-09-06 18:04:33 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 17:58:39 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 17:57:56 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> comment </p>
+    <p class='commit_date'>  2017-09-06 16:57:43 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> marges </p>
+    <p class='commit_date'>  2017-09-06 16:18:00 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> oracle grille </p>
+    <p class='commit_date'>  2017-09-06 15:58:10 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 15:51:43 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> tarifs balsa et bar </p>
+    <p class='commit_date'>  2017-09-06 15:38:45 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 15:28:19 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 15:27:35 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> style.less dans .gitignore </p>
+    <p class='commit_date'>  2017-09-06 15:18:34 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> merge style.less </p>
+    <p class='commit_date'>  2017-09-06 15:17:20 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> new grid </p>
+    <p class='commit_date'>  2017-09-06 15:12:04 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> new grid </p>
+    <p class='commit_date'>  2017-09-06 15:10:39 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 15:01:48 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 15:00:08 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 14:59:27 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> new fonts </p>
+    <p class='commit_date'>  2017-09-06 14:50:59 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> merge </p>
+    <p class='commit_date'>  2017-09-06 14:32:34 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> quentin style.less </p>
+    <p class='commit_date'>  2017-09-06 14:31:16 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> pad2style </p>
+    <p class='commit_date'>  2017-09-06 14:27:23 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> pad2style </p>
+    <p class='commit_date'>  2017-09-06 14:27:05 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> p intro text indent </p>
+    <p class='commit_date'>  2017-09-06 14:23:25 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> new fonts + bandeau gabarit </p>
+    <p class='commit_date'>  2017-09-06 14:07:11 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> new fonts + bandeau gabarit </p>
+    <p class='commit_date'>  2017-09-06 14:04:38 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> balisages </p>
+    <p class='commit_date'>  2017-09-06 12:30:58 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> nouveaux balisages + index </p>
+    <p class='commit_date'>  2017-09-06 11:50:45 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> flyers </p>
+    <p class='commit_date'>  2017-09-05 18:37:09 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> "nouveaux styles" </p>
+    <p class='commit_date'>  2017-09-05 18:10:46 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> verso flyers </p>
+    <p class='commit_date'>  2017-09-05 17:23:42 </p></div>
+
+    <div class='commit'><p class='commit_author'>Luser Flutur </p>
+    <p class='commit_message'> multi HTLM Flyer </p>
+    <p class='commit_date'>  2017-09-05 15:29:06 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> test name </p>
+    <p class='commit_date'>  2017-09-05 14:13:27 </p></div>
+
+    <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+    <p class='commit_message'> balisage flyers </p>
+    <p class='commit_date'>  2017-09-05 13:56:57 </p></div>
+
+    <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+    <p class='commit_message'> recto flyers tracks </p>
+    <p class='commit_date'>  2017-09-05 11:49:48 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> murs balsa </p>
+    <p class='commit_date'>  2017-09-04 14:38:16 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> ajout du T manquant à billetterie </p>
+    <p class='commit_date'>  2017-11-13 21:29:51  </p></div>
+
+    <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+    <p class='commit_message'> precision in filename </p>
+    <p class='commit_date'>  2017-10-27 16:03:19 </p></div>
+
+    <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+    <p class='commit_message'> rasterised logo version black, white, multi sizes </p>
+    <p class='commit_date'>  2017-10-27 15:59:33 </p></div>
+
+    <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+    <p class='commit_message'> totem lettre + news leftovers </p>
+    <p class='commit_date'>  2017-10-26 22:51:49 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> découpes vinyle </p>
+    <p class='commit_date'>  2017-10-26 17:08:29 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> bannière + nouveau logo </p>
+    <p class='commit_date'>  2017-10-26 15:31:38 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> correction dates </p>
+    <p class='commit_date'>  2017-10-24 12:27:53 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> dernière corrections </p>
+    <p class='commit_date'>  2017-10-24 11:37:29 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> enveloppe c5 mises à jour </p>
+    <p class='commit_date'>  2017-10-17 12:27:38 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> affiches lettre sis et fortunes corrigees </p>
+    <p class='commit_date'>  2017-10-16 18:13:26 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> nouvelle affiche spaghetti </p>
+    <p class='commit_date'>  2017-10-10 17:49:59 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> une affiche spaghetti </p>
+    <p class='commit_date'>  2017-10-10 17:33:31 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> rearengement images </p>
+    <p class='commit_date'>  2017-10-10 15:21:58 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> totem lettre et autres </p>
+    <p class='commit_date'>  2017-10-09 17:21:12 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> manage iceberg </p>
+    <p class='commit_date'>  2017-10-09 16:03:40 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> menage </p>
+    <p class='commit_date'>  2017-10-09 15:59:49 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> affiches clean et affiche lettre </p>
+    <p class='commit_date'>  2017-10-09 15:39:58 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> ajout d'un modele affiche totem </p>
+    <p class='commit_date'>  2017-10-09 11:18:58 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> deocupes en blanc </p>
+    <p class='commit_date'>  2017-09-21 14:51:09 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> recto flyers Balsa </p>
+    <p class='commit_date'>  2017-09-20 14:34:52 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> damier sur calque et pas sur le gabarit </p>
+    <p class='commit_date'>  2017-09-19 00:56:40 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> damier sur calque et pas sur le gabarit </p>
+    <p class='commit_date'>  2017-09-19 00:17:52 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> damier sans transparence </p>
+    <p class='commit_date'>  2017-09-18 23:34:37 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> rectos </p>
+    <p class='commit_date'>  2017-09-18 22:14:38 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> rectos scrivus </p>
+    <p class='commit_date'>  2017-09-18 17:43:30 </p></div>
+
+    <div class='commit'><p class='commit_author'>Balsa </p>
+    <p class='commit_message'> oracle invit 2 </p>
+    <p class='commit_date'>  2017-09-14 15:15:36 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> correction avenue </p>
+    <p class='commit_date'>  2017-09-14 12:41:24 </p></div>
+
+    <div class='commit'><p class='commit_author'>Balsa </p>
+    <p class='commit_message'> agneau pour invit </p>
+    <p class='commit_date'>  2017-09-14 12:29:01 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> dernières corrections flyer verso et rectos sur scribus </p>
+    <p class='commit_date'>  2017-09-14 11:46:14 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> corrections fanny </p>
+    <p class='commit_date'>  2017-09-13 17:46:30 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> ensemble rectos flyers </p>
+    <p class='commit_date'>  2017-09-12 18:03:21 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> vecto bandeaux </p>
+    <p class='commit_date'>  2017-09-12 17:49:28 </p></div>
+
+    <div class='commit'><p class='commit_author'>Balsa </p>
+    <p class='commit_message'> Delete IMG_3955.jpg </p>
+    <p class='commit_date'>  2017-09-12 17:20:31 </p></div>
+
+    <div class='commit'><p class='commit_author'>Balsa </p>
+    <p class='commit_message'> test photo </p>
+    <p class='commit_date'>  2017-09-12 17:20:09 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> fonts css </p>
+    <p class='commit_date'>  2017-09-12 14:00:33 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> pathfinder union tarif et bandeau flyer resizé et rééquilibre recto </p>
+    <p class='commit_date'>  2017-09-12 12:49:31 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> pack-com + billeterie </p>
+    <p class='commit_date'>  2017-09-12 12:00:45 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> pour pack com </p>
+    <p class='commit_date'>  2017-09-11 11:50:27 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> layouts2 </p>
+    <p class='commit_date'>  2017-09-08 12:07:44 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> nouveaux md+layout </p>
+    <p class='commit_date'>  2017-09-07 18:04:32 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> nouveaux svg </p>
+    <p class='commit_date'>  2017-09-07 17:17:37 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> bandeau replacé </p>
+    <p class='commit_date'>  2017-09-07 16:54:32 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> logos +gros </p>
+    <p class='commit_date'>  2017-09-07 16:49:48 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> en : fr </p>
+    <p class='commit_date'>  2017-09-07 16:32:48 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau-vecto </p>
+    <p class='commit_date'>  2017-09-07 16:12:22 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> marges oracles </p>
+    <p class='commit_date'>  2017-09-07 16:02:26 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> tarifbarvecto clean </p>
+    <p class='commit_date'>  2017-09-07 15:58:01 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> tarifbarvecto clean </p>
+    <p class='commit_date'>  2017-09-07 15:57:38 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> merge </p>
+    <p class='commit_date'>  2017-09-07 15:53:51 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> damier à tour et racalibrage des rectos </p>
+    <p class='commit_date'>  2017-09-07 15:51:39 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> corrections verso </p>
+    <p class='commit_date'>  2017-09-07 15:48:10 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> modifications textes </p>
+    <p class='commit_date'>  2017-09-07 13:25:42 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> font + placements images </p>
+    <p class='commit_date'>  2017-09-07 13:00:40 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> plume non coupée </p>
+    <p class='commit_date'>  2017-09-07 12:52:41 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> h1 font </p>
+    <p class='commit_date'>  2017-09-07 12:40:08 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> jointures images </p>
+    <p class='commit_date'>  2017-09-07 12:26:59 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> font correcte pour h1 </p>
+    <p class='commit_date'>  2017-09-07 12:21:15 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> dossier pdf </p>
+    <p class='commit_date'>  2017-09-07 10:07:10 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau images </p>
+    <p class='commit_date'>  2017-09-07 10:06:15 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> placement images versor </p>
+    <p class='commit_date'>  2017-09-06 23:58:07 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> image position </p>
+    <p class='commit_date'>  2017-09-06 19:18:24 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> new logo et damiera5 </p>
+    <p class='commit_date'>  2017-09-06 19:14:53 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> verso oracle </p>
+    <p class='commit_date'>  2017-09-06 19:14:26 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> fonds damier </p>
+    <p class='commit_date'>  2017-09-06 18:05:16 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> sous parties </p>
+    <p class='commit_date'>  2017-09-06 18:04:33 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 17:58:39 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 17:57:56 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> comment </p>
+    <p class='commit_date'>  2017-09-06 16:57:43 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> marges </p>
+    <p class='commit_date'>  2017-09-06 16:18:00 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> oracle grille </p>
+    <p class='commit_date'>  2017-09-06 15:58:10 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 15:51:43 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> tarifs balsa et bar </p>
+    <p class='commit_date'>  2017-09-06 15:38:45 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 15:28:19 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 15:27:35 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> style.less dans .gitignore </p>
+    <p class='commit_date'>  2017-09-06 15:18:34 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> merge style.less </p>
+    <p class='commit_date'>  2017-09-06 15:17:20 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> new grid </p>
+    <p class='commit_date'>  2017-09-06 15:12:04 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> new grid </p>
+    <p class='commit_date'>  2017-09-06 15:10:39 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 15:01:48 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 15:00:08 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> bandeau </p>
+    <p class='commit_date'>  2017-09-06 14:59:27 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> new fonts </p>
+    <p class='commit_date'>  2017-09-06 14:50:59 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> merge </p>
+    <p class='commit_date'>  2017-09-06 14:32:34 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> quentin style.less </p>
+    <p class='commit_date'>  2017-09-06 14:31:16 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> pad2style </p>
+    <p class='commit_date'>  2017-09-06 14:27:23 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> pad2style </p>
+    <p class='commit_date'>  2017-09-06 14:27:05 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> p intro text indent </p>
+    <p class='commit_date'>  2017-09-06 14:23:25 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> new fonts + bandeau gabarit </p>
+    <p class='commit_date'>  2017-09-06 14:07:11 </p></div>
+
+    <div class='commit'><p class='commit_author'>Antoine G </p>
+    <p class='commit_message'> new fonts + bandeau gabarit </p>
+    <p class='commit_date'>  2017-09-06 14:04:38 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> balisages </p>
+    <p class='commit_date'>  2017-09-06 12:30:58 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> nouveaux balisages + index </p>
+    <p class='commit_date'>  2017-09-06 11:50:45 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> flyers </p>
+    <p class='commit_date'>  2017-09-05 18:37:09 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> "nouveaux styles" </p>
+    <p class='commit_date'>  2017-09-05 18:10:46 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> verso flyers </p>
+    <p class='commit_date'>  2017-09-05 17:23:42 </p></div>
+
+    <div class='commit'><p class='commit_author'>Luser Flutur </p>
+    <p class='commit_message'> multi HTLM Flyer </p>
+    <p class='commit_date'>  2017-09-05 15:29:06 </p></div>
+
+    <div class='commit'><p class='commit_author'>Quentin Astié </p>
+    <p class='commit_message'> test name </p>
+    <p class='commit_date'>  2017-09-05 14:13:27 </p></div>
+
+    <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+    <p class='commit_message'> balisage flyers </p>
+    <p class='commit_date'>  2017-09-05 13:56:57 </p></div>
+
+    <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+    <p class='commit_message'> recto flyers tracks </p>
+    <p class='commit_date'>  2017-09-05 11:49:48 </p></div>
+
+    <div class='commit'><p class='commit_author'>Sarah Magnan </p>
+    <p class='commit_message'> murs balsa </p>
+    <p class='commit_date'>  2017-09-04 14:38:16 </p></div>
+
+</div>
+</body>
+</html>

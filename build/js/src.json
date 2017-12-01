@@ -1,0 +1,12 @@
+{
+    "etna": "layout/etna/index.html", 
+    "i-clit": "layout/i-clit/index.html", 
+    "les-fortunes": "layout/les-fortunes/index.html", 
+    "les-loups": "layout/les-loups/index.html", 
+    "lettre-vollee": "layout/lettre-vollee/index.html", 
+    "on-pense-a-vous": "layout/on-pense-a-vous/index.html", 
+    "oracles": "layout/oracles/index.html", 
+    "scripta-manent": "layout/scripta-manent/index.html", 
+    "sis": "layout/sis/index.html", 
+    "trilogie-de-rome": "layout/trilogie-de-rome/index.html"
+}

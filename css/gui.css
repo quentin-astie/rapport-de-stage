@@ -1,0 +1,95 @@
+/**
+ * This file is part of HTML2print.
+ *
+ * HTML2print is free software: you can redistribute it and/or modify it under the
+ * terms of the GNU Affero General Public License as published by the Free
+ * Software Foundation, either version 3 of the License, or (at your option) any
+ * later version.
+ *
+ * HTML2print is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ * PARTICULAR PURPOSE.  See the GNU Affero General Public License for more
+ * details.
+ *
+ * You should have received a copy of the GNU Affero General Public License along
+ * with HTML2print.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+}
+
+#viewport {
+    position: fixed;
+    width: 100%;
+    height: calc(100% - 25px);
+    border: none;
+}
+
+#toolbar {
+    background-color: black;
+    position: fixed;
+    height: 25px;
+    bottom: 0em;
+    left: 0;
+    right: 0;
+    color: white;
+    font-family: sans;
+    font-size: 11px;
+    text-transform: uppercase;
+    padding: 3px 0;
+    box-sizing: border-box;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+#toolbar > label {
+    margin-left: 1.5em;
+    margin-right: 3px;
+}
+
+#toolbar > input {
+    border: 1px solid white;
+    background-color: white;
+    font-size: 11px;
+    vertical-align: -2px;
+}
+
+#toolbar > input[type=number]{
+    width: 50px;
+    vertical-align: 0px;
+    margin-left: 2px;
+}
+
+#toolbar > input:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+
+#toolbar > button {
+    border: 1px solid white;
+    background-color: white;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-right: 1em;
+    height: 19px;
+}
+
+#toolbar > button:hover {
+    cursor: pointer;
+    background-color: yellow;
+}
+
+#toolbar > .separator {
+    content: " ";
+    flex-grow: 2;
+    -webkit-flex-grow: 2;
+}

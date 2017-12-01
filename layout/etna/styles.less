@@ -1,0 +1,105 @@
+@import '../../../css/main.less';
+
+
+#flow-main .git { -webkit-flow-into: flow-git; flow-into: flow-git;}
+.flow-git { -webkit-flow-from: flow-git; flow-from: flow-git;}
+
+#flow-main .infos h1 { -webkit-flow-into: flow-title; flow-into: flow-title;}
+.flow-title { -webkit-flow-from: flow-title; flow-from: flow-title;}
+
+#flow-main .infos { -webkit-flow-into: flow-infos; flow-into: flow-infos;}
+.flow-infos { -webkit-flow-from: flow-infos; flow-from: flow-infos;}
+
+body *{
+  font-family: "Plain-Thin";
+}
+
+div.git{
+  overflow:hidden;
+}
+
+div.infos{
+  position: absolute;
+}
+
+.infos p{
+  font-size: 14pt;
+  line-height: 16pt;
+  text-indent: 16pt;
+}
+
+.infos h1{
+  font-weight: normal;
+  font-size:72pt;
+  display: inline;
+  vertical-align: top;
+  letter-spacing: -5pt;
+}
+
+.infos img{
+  width:40%;
+  margin-left: -100px;
+  display: inline;
+}
+
+.infos dl{
+  font-size: 14pt;
+  margin: 16pt 0 16pt 0;
+}
+
+.infos dl dt{
+  display: inline-block;
+  margin-right: 0.2em;
+}
+
+.infos dl dd{
+  display: inline-block;
+  padding: 2pt;
+  border: 1px solid grey;
+  border-radius: 5pt;
+  color: grey;
+}
+
+div.commit{
+  padding-top: 0;
+  background-color:;
+  margin-bottom: 30pt;
+  page-break-inside: avoid;
+}
+
+p{
+  margin:0;
+}
+
+p.commit_date{
+  color:green;
+  font-size:7pt;
+  position: absolute;
+  right:0;
+  padding-top: 4pt;
+}
+
+p.commit_author{
+  font-size:10pt;
+  border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
+  color:blue;
+}
+
+p.commit_message{
+  font-weight: normal;
+  font-size:12pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  margin-left: 1em;
+  border-bottom: 1px solid black;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  -ms-word-break: break-all;
+  word-break: break-all;
+}
+
+#merge *{
+  color:pink;
+}

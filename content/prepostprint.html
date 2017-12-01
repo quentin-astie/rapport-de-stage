@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<head>
+<meta charset='UTF-8'>
+<title></title>
+<link rel='stylesheet' href='stylesheet.css'>
+</head>
+
+<body>
+
+<div class="infos">
+  <h1>PrePostPrint</h1>
+  <p>Mon expérience chez OSP reste surtout marquée par l'utilisation d'outils libres et alternatifs de publication avec en tête de gondole html2print, un outil permettant d'imprimer et de mettre en forme depuis un navigateur du contenu html. Depuis 3 ans, OSP a développé cet outil de publication, et continue à le perfectionner régulièrement. C'est très probablement l'outil sur lequel j'ai passé le plus de temps durant mon stage. Mon passage chez OSP concorde en outre avec l'organisation d'un évènement consacré aux outils libres et alternatifs à la Gaîté Lyrique : PrePostPrint.</p>
+  <h2>html2print</h2>
+  <p>Pour quiconque a déjà manipulé du html/css et déjà servi des fichiers sur un serveur, il n'est pas compliqué de prendre en main html2print au début. Ce qui était plus compliqué à mes yeux était surtout de me repérer dans la structure, de me figurer une hierarchisation claire des fichiers et des flux. En fait, c'est certainement cette notion de flux en opposition à un modèle statique des technologies web que j'avais l'habitude de manipuler, qui a peut-être était le plus déséquilibrant. Mais c'est sans doute aussi ce qui rend son utilisation et les perspectives d'un tel outil aussi excitants. Développé depuis plusieurs années, et diffusé à travers des séries de workshops et autres évènements, html2print a aussi été utilisé, sous des versions parfois dérivées par d'autres designers. Alors chez OSP on pense à communiquer d'avantage dessus, notamment en ligne en consacrant à html2print un mini-site. Il proposerait un tutoriel d'installation plus accessible à des néophytes de la culture de la programmation, un showcase des projets déjà présentés et puis une sorte de livre de recettes où s'échangerait différentes astuces de développement pour améliorer l'outil.</p>
+  <h2>PPP à la Gaîté Lyrique</h2>
+  <p>PrePostPrint se déroule sur deux journées à la Gaîté Lyrique à Paris. Le premier jour est une rencontre entre différents acteurs du design graphique sucitant un intérêt pour le libre et les outils de publication alternatifs. Chaque acteur intervient pour présenter un projet réalisé grâce à une technique de publication alternative. Chaque présentation permet de diffuser et d'échanger projets, outils et conseils techniques entre tous les intervenants. À la fin de la journée il est décidé de former des groupes de travail pour oeuvrer sur trois enjeux : la technique - création d'un outil commun - ; la diffusion - utilisation d'outils alternatifs et showcase de projets - ; la pédagogie - comment communiquer de manière didactique dans les écoles, au grand public. On crée une mailing list et il est décidé qu'on installera un wikimedia sur le serveur prepostprint.org, nom de domaine déjà déposé pour l'évènement. Le lendemain, une journée de présentation au public est organisée avec des stands des différents protagonistes de PrePostPrint, présentant des projets liés à la problématique. À cela s'ajoute des conférences faisant un état de l'art des systèmes de publication alternatifs.</p>
+</div>
+
+<div class='git'>
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> ajout contenus + premiers styles </p>
+  <p class='commit_date'>  2017-09-22 18:19:46 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> modifs test </p>
+  <p class='commit_date'>  2017-09-13 17:37:36 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> structure </p>
+  <p class='commit_date'>  2017-09-13 12:38:20 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> blank (simple from https://github.com/getpelican/pelican/tree/master/pelican/themes/simple)theme and relative adjusments in the conf file </p>
+  <p class='commit_date'>  2017-09-13 11:32:00 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Quentin Astié </p>
+  <p class='commit_message'> requis supposés, à verifier avec Alex </p>
+  <p class='commit_date'>  2017-09-13 11:25:34 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Update ghostscript.md </p>
+  <p class='commit_date'>  2017-08-31 12:24:30 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alex Leray </p>
+  <p class='commit_message'> Started a website to document HTML2print </p>
+  <p class='commit_date'>  2017-08-31 12:16:33 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Sarah Magnan</p>
+  <p class='commit_message'> relink the localhost to the file document.html. No need anymore to use the polyfill file </p>
+  <p class='commit_date'>  2016-05-26 13:07:33 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> region-break adapted for polyfill </p>
+  <p class='commit_date'>  2016-04-07 16:26:58 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> an image in the content of the 'examples' folder </p>
+  <p class='commit_date'>  2016-04-07 16:25:58 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Eric Schrijver </p>
+  <p class='commit_message'> Add some structure to the HTML content document so it is clear it is HTML </p>
+  <p class='commit_date'>  2016-04-07 16:12:06 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Eric Schrijver </p>
+  <p class='commit_message'> Load polyfill automatically on Chrome </p>
+  <p class='commit_date'>  2016-04-07 16:00:04 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Eric Schrijver </p>
+  <p class='commit_message'> Make start script work on OS X as well </p>
+  <p class='commit_date'>  2016-04-07 14:24:29 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> New example: display your document as a flatplan </p>
+  <p class='commit_date'>  2015-10-09 13:08:28 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> toggle spread class on <body> rather than <html> </p>
+  <p class='commit_date'>  2015-08-11 17:10:36 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> if `var content = ''`, then the story is not replaced by a file (used for examples) </p>
+  <p class='commit_date'>  2015-08-11 17:08:55 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> spread.html example now showcases images (or other content) running on a spread. </p>
+  <p class='commit_date'>  2015-08-11 17:07:53 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> removed commented Popelt commands from moveable.html </p>
+  <p class='commit_date'>  2015-08-11 16:43:04 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Added a disclaimer regarding the examples which might use an older version of the boilerplate </p>
+  <p class='commit_date'>  2015-08-11 16:38:30 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> pagination + region-breaks example now actually showcases something </p>
+  <p class='commit_date'>  2015-08-11 16:36:42 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> hide crop marks in preview mode </p>
+  <p class='commit_date'>  2015-08-11 15:48:06 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> reversed order of input and labels for better legibility </p>
+  <p class='commit_date'>  2015-08-11 15:47:52 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> gui css </p>
+  <p class='commit_date'>  2015-08-11 15:47:19 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Renamed:     - index.html → document.html     - gui.html → index.html </p>
+  <p class='commit_date'>  2015-08-11 14:27:12 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Alexandre Leray </p>
+  <p class='commit_message'> L'interface et la structure sont désormais séparées </p>
+  <p class='commit_date'>  2015-07-10 11:23:21 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> balsa 2014-2015 poster season </p>
+  <p class='commit_date'>  2015-04-30 14:15:24 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> mixed inks screenshot </p>
+  <p class='commit_date'>  2015-04-30 06:41:15 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> readme small fixes </p>
+  <p class='commit_date'>  2015-04-30 05:46:42 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> fix spread view </p>
+  <p class='commit_date'>  2015-03-31 11:01:49 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> fix paper size (it was the same as the page size) </p>
+  <p class='commit_date'>  2015-03-31 10:44:27 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Making the color guides less confusing. Redrawing the crop marks with less, as the 4 values for background-position does not seem to work in Arora. </p>
+  <p class='commit_date'>  2015-03-24 23:22:36  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> New example page: we can load content from part of an existing webpage! </p>
+  <p class='commit_date'>  2015-03-23 23:20:10  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Put further documentation in "Documentation.md". </p>
+  <p class='commit_date'>  2015-03-23 16:53:24  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Some cleaning. Put the 2columns example in an "examples" folder so that the boilerplate stays as basic as possible. Nota: you can use the class "recipient" to create a new box to flow into. </p>
+  <p class='commit_date'>  2015-03-23 15:40:47  </p></div>
+
+  <div class='commit'><p class='commit_author'>Pierre Huyghebaert </p>
+  <p class='commit_message'> Put the first launch before other operation to try to ease the learning curve, and some minor corrections </p>
+  <p class='commit_date'>  2015-03-23 13:05:01  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> updates the example to have two columns </p>
+  <p class='commit_date'>  2015-03-17 22:01:40  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> moving over some settings, cleaning workshop files, last commit in the train back from Strasbourg </p>
+  <p class='commit_date'>  2015-03-13 23:27:10  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> adding items to the README, discussing with Steph about moving most 'advanced' items out of the main README over to a 'dev' type file' </p>
+  <p class='commit_date'>  2015-03-13 23:21:50  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Fixed spread view. </p>
+  <p class='commit_date'>  2015-03-12 09:52:40  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Put back the zoom button from VJ14 publication. It is made using `-webkit-transform` because using the browser zooming feature makes the rendering engine recalculate the layout, ending in slight differences in word wraps. </p>
+  <p class='commit_date'>  2015-03-11 15:06:38  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Restructuration du projet pendant le workshop OSP à la HEAR, Strasbourg. </p>
+  <p class='commit_date'>  2015-03-11 14:53:19  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> adding in a 'to document' list </p>
+  <p class='commit_date'>  2015-03-10 00:56:09  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> more syntaxic / formatic changes to README </p>
+  <p class='commit_date'>  2015-03-10 00:50:24  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> sematics and formatting of the README now that I see it rendered in gh </p>
+  <p class='commit_date'>  2015-03-10 00:31:44  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> changing .txt to .md of the README </p>
+  <p class='commit_date'>  2015-03-10 00:13:17  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> gros merge avec design de la page d'Alex + la restructuration Alex  et Colm O'Neill O'Neill </p>
+  <p class='commit_date'>  2015-03-09 23:59:38  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> some fixes in the readme </p>
+  <p class='commit_date'>  2015-03-09 23:53:30  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> rm margins of footer to correct its position </p>
+  <p class='commit_date'>  2015-03-04 23:25:57  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> still a bug with text flowing over pagination </p>
+  <p class='commit_date'>  2015-03-04 19:05:09  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> updates the content to Flatland </p>
+  <p class='commit_date'>  2015-03-04 18:59:23  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> rather than describing the necessary files for the boilerplate to run, I opted to describe the anatomy of the repo. Still to describe in sections of README: editing the running title, how to name the pdf, how to understand the CSS pagination, how to use css regions </p>
+  <p class='commit_date'>  2015-03-04 18:13:38  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> rather than describing the necessary files for the boilerplate to run, I opted to describe the anatomy of the repo. Still to describe in sections of README: editing the running title, how to name the pdf, how to understand the CSS pagination, how to use css regions </p>
+  <p class='commit_date'>  2015-03-04 18:07:34  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> restructuring the repo for ease of use: all libs, tools, partials, files are to be placed into assets/ </p>
+  <p class='commit_date'>  2015-03-04 17:44:43  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> removed the iceberg images for now: I realize that one confusing aspect of the previous screenshots for the Iceberg was the use of a screnshot of an interface inside of a web page which actually was a layout interface. Very confusing. I plan to replace the images for this suggested branch, and update the screenshots inside the iceberg too. </p>
+  <p class='commit_date'>  2015-03-04 17:28:40  </p></div>
+
+  <div class='commit'><p class='commit_author'>Colm O'Neill </p>
+  <p class='commit_message'> mega clean </p>
+  <p class='commit_date'>  2015-03-04 17:25:59  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> changed order of javascript to make the GO TO button work </p>
+  <p class='commit_date'>  2015-02-27 12:41:54  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Polyfill to make it work on Firefox and latest Chromium </p>
+  <p class='commit_date'>  2015-02-27 12:29:57  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alexandre Leray </p>
+  <p class='commit_message'> Séparation du javascript </p>
+  <p class='commit_date'>  2015-02-16 01:02:58  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alexandre Leray </p>
+  <p class='commit_message'> réorganisation des fichiers </p>
+  <p class='commit_date'>  2015-02-16 00:39:00  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alexandre Leray </p>
+  <p class='commit_message'> more changes </p>
+  <p class='commit_date'>  2015-02-15 23:20:08  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alexandre Leray </p>
+  <p class='commit_message'> bump </p>
+  <p class='commit_date'>  2015-02-13 11:13:59  </p></div>
+
+  <div class='commit'><p class='commit_author'>Alexandre Leray </p>
+  <p class='commit_message'> wip </p>
+  <p class='commit_date'>  2015-02-11 13:17:37  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> renamed print-marks into pages </p>
+  <p class='commit_date'>  2015-02-06 11:46:28  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> spreads are back </p>
+  <p class='commit_date'>  2015-02-06 11:16:59  </p></div>
+
+  <div class='commit'><p class='commit_author'>Ludi Loiseau </p>
+  <p class='commit_message'> TODO update from OSP day October 24th </p>
+  <p class='commit_date'>  2014-10-24 15:23:59 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> simplification of the naming : "preview-page" becomes simply "page", "page" becomes "main-section" </p>
+  <p class='commit_date'>  2014-08-19 17:29:32 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> create pages by cloning the master page in polyfill </p>
+  <p class='commit_date'>  2014-08-19 17:26:30 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Delete manual firing of CSS regions polyfill as it does not work on the fly but on loading. </p>
+  <p class='commit_date'>  2014-08-19 14:59:56 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Added reset.css to regions-polyfill.html to avoid weird margins. </p>
+  <p class='commit_date'>  2014-08-19 14:17:58 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Visit http://localhost:8000/regions-polyfill.html to test CSS regions with browsers which don't support this feature natively. </p>
+  <p class='commit_date'>  2014-08-19 14:13:50 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> update todo </p>
+  <p class='commit_date'>  2014-08-19 14:13:17 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> spread button </p>
+  <p class='commit_date'>  2014-08-19 14:13:09 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> main section: overflow hidden </p>
+  <p class='commit_date'>  2014-08-19 14:13:00 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> rm error in page number </p>
+  <p class='commit_date'>  2014-08-19 14:12:30 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> main.less was not updated </p>
+  <p class='commit_date'>  2014-07-13 16:14:20 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Some more organization. </p>
+  <p class='commit_date'>  2014-07-13 15:58:51 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Re-organizing the files and README/Documentation. </p>
+  <p class='commit_date'>  2014-07-13 15:28:50 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> crop marks in javascript/html as the CSS gradients did not print </p>
+  <p class='commit_date'>  2014-07-13 15:01:37 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> update readme: describe new examples, browser versions </p>
+  <p class='commit_date'>  2015-07-13 14:15:44 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> cleaning in the styles + adding 1mm to paper-height in the @page statement, so that it doesn't make an empty page on Chromium </p>
+  <p class='commit_date'>  2015-07-13 14:02:01 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> missing files to make examples work </p>
+  <p class='commit_date'>  2015-07-13 13:57:23 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> examples of polyfill usage: It works on Chromium and Firefox ! But the polyfill seems to also apply on webkit, although there is no need for it. </p>
+  <p class='commit_date'>  2015-07-13 13:56:39 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> changing paths with the new name of less folder </p>
+  <p class='commit_date'>  2015-07-13 13:14:04 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> rm call to page.js in index.html as the file doesn't exist anymore </p>
+  <p class='commit_date'>  2015-07-09 13:58:05 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> renamed css folder into less </p>
+  <p class='commit_date'>  2015-07-09 11:45:14 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Working on example "load external webpage": example with Villa Arson diplômés 2015, replacing class name "page" into "loaded page" so that it doesn't get the styles from the boilerplate. </p>
+  <p class='commit_date'>  2015-07-09 11:03:05 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> example of an image on a spread </p>
+  <p class='commit_date'>  2015-05-21 14:07:22 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> moveable elements example </p>
+  <p class='commit_date'>  2015-04-30 17:02:08 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> rm jquery.ui and popelt from index.html → they are useful only for moveable elements </p>
+  <p class='commit_date'>  2015-04-30 16:49:53 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Boilerplate content.html contains "Your text here" message. </p>
+  <p class='commit_date'>  2015-04-30 16:38:57 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> master pages example a bit more telling → applied on odd and even pages </p>
+  <p class='commit_date'>  2015-04-30 16:35:25 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> "Hi-res" button outlines in red images with too small resolution (set for 300 dpi, change number to "3" to "6" if you want to check for 600dpi). </p>
+  <p class='commit_date'>  2014-05-29 16:32:41 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> view as spread </p>
+  <p class='commit_date'>  2014-05-29 15:57:34 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> add explanation of colorSeparation folder </p>
+  <p class='commit_date'>  2014-05-29 15:20:15 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> cleaning repo </p>
+  <p class='commit_date'>  2014-05-29 15:15:23 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> bouton "preview" devient "hi-res" </p>
+  <p class='commit_date'>  2014-05-29 15:08:26 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Pierre Huyghebaert </p>
+  <p class='commit_message'> Added a few extra explanations from our Variable publication session </p>
+  <p class='commit_date'>  2014-05-29 14:41:37 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Pierre Huyghebaert </p>
+  <p class='commit_message'> Added some little explanations </p>
+  <p class='commit_date'>  2014-04-19 13:29:57 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Page count start at 1. </p>
+  <p class='commit_date'>  2014-04-19 00:19:56 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Y E S Crop marks finally work directly in Javascript, even with lots of pages. Wonder why it does not work on Balsa project though. </p>
+  <p class='commit_date'>  2014-04-19 00:17:47 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Interface buttons stay white when activated. </p>
+  <p class='commit_date'>  2014-04-18 23:15:14 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Jump to page XX. </p>
+  <p class='commit_date'>  2014-04-18 23:13:06 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> `colorSeparation.sh` generates an HTML page to check color separation, layering the different images for each channel and page. </p>
+  <p class='commit_date'>  2014-04-11 18:50:09 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> still some stuff to do...wq </p>
+  <p class='commit_date'>  2014-04-11 00:58:21 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Update documentation. </p>
+  <p class='commit_date'>  2014-04-11 00:30:57 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Fix img url in content.html and index.html </p>
+  <p class='commit_date'>  2014-04-11 00:30:33 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Use Ghostscript to check color separation. It outputs a tiff image, converted to jpg, for each color channel, for each page. In progress: generation of a webpage to have an interface to check those channels. </p>
+  <p class='commit_date'>  2014-04-11 00:27:57 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Use Ghostscript to convert a PDF from RGB to CMYK. </p>
+  <p class='commit_date'>  2014-04-11 00:23:56 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Includes a header and a footer. You can specify the height of them in the variables at the top of `print.less`. If `height = 0`, then it's like they don't exist. You can also specify their content in the variables for easier use. As an example, the header has a mirrored running title and the footer has a pagination. </p>
+  <p class='commit_date'>  2014-04-08 22:18:30 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Reorganize project structure. </p>
+  <p class='commit_date'>  2014-04-08 15:58:52 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Forgot to track the image example for small resolution. </p>
+  <p class='commit_date'>  2014-04-08 15:50:14 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> .gitignore file to avoid tracking temp and backup files </p>
+  <p class='commit_date'>  2014-04-08 15:49:16 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Added common ligatures and kerning to every element. </p>
+  <p class='commit_date'>  2014-04-08 01:15:01 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Add "text-rendering: optimizeLegibility" to everything. </p>
+  <p class='commit_date'>  2014-04-08 01:08:50 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> A "Debug" button to show/hide elements boxes. </p>
+  <p class='commit_date'>  2014-04-08 01:05:49 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> var everywhere </p>
+  <p class='commit_date'>  2014-04-08 01:01:31 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> A "Preview" button adding a class "export" to <html> and to see images in high resolution using the "data-hires" attribute. [note: the new feature of multiple image sources "srcset" doesn't work for printing cases. Maybe when the <picture> tag will be implemented?] </p>
+  <p class='commit_date'>  2014-04-08 01:00:57 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Some cleaning + documentation </p>
+  <p class='commit_date'>  2014-04-07 17:48:07 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Moving moveable elements on its own example page. </p>
+  <p class='commit_date'>  2014-04-07 17:16:41 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Updated the TODO after some tests. Still exciting! </p>
+  <p class='commit_date'>  2014-04-07 17:03:40 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Example of different possible usage of moveable elements combined with fitting classes. </p>
+  <p class='commit_date'>  2014-04-07 17:02:52 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Simplified structure of the document. Now the container of the regions flow is inside the master-page, containing crop-marks and folio. This master page is now duplicated to the desired number of pages, written in a variable at the top of `print.js` file. </p>
+  <p class='commit_date'>  2014-04-07 17:01:16 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> .moveable elements don't work when loaded from the external HTML page of content. </p>
+  <p class='commit_date'>  2014-04-07 16:58:16 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Replace page-break by region-break. </p>
+  <p class='commit_date'>  2014-04-07 15:26:52 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Content is written in a separate HTML file to simplify editing. Thanks to Alex for the super simple Jquery trick:     $("#container").load("content.html"); </p>
+  <p class='commit_date'>  2014-04-07 15:21:26 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Internal links in PDF works magically with HTML anchored links. </p>
+  <p class='commit_date'>  2014-04-07 13:14:34 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Classes for image fitting. Mostly useful when used inside a .moveable element. </p>
+  <p class='commit_date'>  2014-04-05 23:10:57 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Started a roadmap in the file `TODO` (I find this word more accessible to non-programmers). </p>
+  <p class='commit_date'>  2014-04-05 01:22:04 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> A class `.moveable` to position absolute objects on the page. You can then drag and drop the object, resize it. Then click on its "properties" button to copy/paste its properties (top, left, width, height) to its style attributes in the HTML document. </p>
+  <p class='commit_date'>  2014-04-05 01:19:37 +0200 </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Some iceberg pictures to showcase the tool. </p>
+  <p class='commit_date'>  2014-03-28 01:17:42  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Adding a class "spread" to the <html> tag will display your document in spread within the browser. </p>
+  <p class='commit_date'>  2014-03-28 01:16:48  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Pagination made in pure CSS! </p>
+  <p class='commit_date'>  2014-03-28 01:05:06  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Variables for margins. Mirrored pages are possible (even for casperjs I think as I do not use @page:left|right, but .page:nth-child(odd|even) with CSS regions. </p>
+  <p class='commit_date'>  2014-03-28 00:57:39  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Refining web regions. </p>
+  <p class='commit_date'>  2014-03-28 00:30:10  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Using CSS regions to flow content into pages (so that content is not printed on the crop marks area). </p>
+  <p class='commit_date'>  2014-03-27 23:28:40  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> read me to use it </p>
+  <p class='commit_date'>  2014-03-23 15:01:28  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Page breaks =========== </p>
+  <p class='commit_date'>  2014-03-12 18:36:20  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Using Scribus to check cropmarks length and offset. We use Scribus as a template for cropmarks for compatibility in case of PDFs made with HTML and some made in Scribus for the same object to avoid confusion at the printing house. (We had this issue with Balsamine flyers last year where the front side was designed in Scribus and the back side with HTML.) </p>
+  <p class='commit_date'>  2014-03-12 18:15:33  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Crop marks seem ok. </p>
+  <p class='commit_date'>  2014-03-12 18:14:24  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> we don't need to force the page height with an empty image anymore </p>
+  <p class='commit_date'>  2014-03-12 18:14:04  </p></div>
+
+  <div class='commit'><p class='commit_author'>Stéphanie Vilayphiou </p>
+  <p class='commit_message'> Start of the boilerplate in a TGV, back to its roots. Nota: less CSS does not work in Chrome on local files. </p>
+  <p class='commit_date'>  2014-03-12 12:10:38  </p></div>
+
+</div>
+</body>
+</html>

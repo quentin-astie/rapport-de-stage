@@ -1,0 +1,226 @@
+/**
+ * Macro-structure
+ * ===============
+ */
+
+.main,
+.main:before,
+.main:after { position: absolute; }
+
+.main:before,
+.main:after { z-index: 500; }
+
+
+/**
+ * Zone de composition principale
+ * ------------------------------
+ */
+
+.main {
+    top: @page-margin-top;
+    bottom: @page-margin-bottom;
+}
+
+/* TODO: move into grid.less? */
+.bloc { position: absolute; z-index: 500; }
+.debug .header,
+.debug .footer,
+.debug .main,
+.debug .bloc { outline: 1px solid purple; }
+
+/**
+ * Pieds de page
+ * -------------
+ */
+
+// .main:before,
+// .main:after {
+//     display: block;
+//     font-family: "Ume double stroke info pratique";
+//     font-size: 8pt;
+//     line-height: @line-height;
+//     letter-spacing: 0.25pt;
+//     z-index: 500;
+// }
+
+// .main:before,
+// .main:after { bottom: @line-height * -3; }
+
+/*gauche*/
+/*.main:before { content: "Type d'article — Titre de l'article"; } */
+/*droite*/
+/*.main:before { content: "Médor n°1 —  printemps 2015"; }*/
+// .main:before {
+//   content: "Balsamine — Saison 2017-2018";
+//   position: absolute;
+//   transform-origin: top-left;
+// }
+// .main:after  {
+//   content: counter(folio);
+//   z-index: 499;
+//   position: absolute
+// }
+
+// .main:before, .main:after, .damier-fond {
+//   font-family: "Ume double stroke info pratique";
+//   font-size: 9pt;
+//   line-height: @line-height;
+// }
+//
+// .sheet:nth-child(odd) .main .damier-fond:before {
+//   transform: rotate(-90deg);
+//   transform-origin: top right;
+//   letter-spacing: 2px;
+//   text-align: left;
+//   padding: none;
+//   width: 80px;
+//   height: 5mm;
+//   right: 64px;
+//   top: 50px;
+//   position: absolute;
+// }
+
+// .sheet:nth-child(even) .main:before {
+//   content: "Saison 2017-2018";
+//   text-align: left;
+//   width: 150px;
+//   height: 5mm;
+//   // outline: 1px solid black;
+//   left: calc(~"0% - 5mm");
+//   top: calc(~"0% + 150px");
+//   transform: rotate(-90deg);
+//   transform-origin: bottom left;
+//
+//   background-image: url(http://www.balsamine.be/theme/imgs/logo-balsa.svg);
+//   background-position: right;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   display:none;
+// }
+
+// .sheet:nth-child(odd) .main:after {
+//   content: "Planche -"counter(folio);
+//   letter-spacing: 1px;
+//   text-align: left;
+//   padding: none;
+//   width: 400px;
+//   height: 5mm;
+//   right: calc(~"0% - 5mm");
+//   bottom: 550px;
+//   transform: rotate(-90deg);
+//   transform-origin: top right;
+// }
+//
+// .sheet:nth-of-type(3) .damier-fond:before {
+//   content: "2 — 3";
+// }
+// .sheet:nth-of-type(3) .main:after {
+//   content: "septembre ";
+// }
+// .sheet:nth-of-type(5) .damier-fond:before {
+//   content: "4 — 5";
+// }
+// .sheet:nth-of-type(5) .main:after {
+//   content: "septembre → novembre";
+// }
+// .sheet:nth-of-type(7) .damier-fond:before {
+//   content: "6 — 7";
+// }
+// .sheet:nth-of-type(7) .main:after {
+//   content: "novembre → janvier";
+// }
+// .sheet:nth-of-type(9) .damier-fond:before {
+//   content: "8 — 9";
+// }
+// .sheet:nth-of-type(9) .main:after {
+//   content: "février → avril";
+// }
+// .sheet:nth-of-type(11) .damier-fond:before {
+//   content: "10 — 11";
+// }
+// .sheet:nth-of-type(11) .main:after {
+//   content: "Billetterie";
+// }
+// .sheet:nth-of-type(13) .damier-fond:before {
+//   content: "12 — 13";
+// }
+// .sheet:nth-of-type(13) .main:after {
+//   content: "Pratique → Autour des spectacles → Partenaires → Équipe";
+// }
+
+
+// .sheet:nth-child(odd) .main:after {
+//   content: counter(folio);
+//   text-align: left;
+//   right: calc(~"0% - 14mm");
+//   bottom: 0;
+//   width: 5mm;
+//   transform-origin: bottom right;
+//   // outline: 1px solid black;
+// }
+
+// .sheet:nth-child(even) .main:after {
+//   content: counter(folio);
+//   text-align: right;
+//   left: calc(~"0% - 14mm");
+//   bottom: 0;
+//   width: 5mm;
+//   transform-origin: bottom left;
+//   // outline: 1px solid black;
+// }
+
+
+/**
+ * Miroir
+ * -------
+ */
+
+/**
+ * Placement en miroir des éléments en fonction de si ils se trouvent sur une
+ * page paire ou une page impaire, en utilisant le pseudo-sélecteur `nth-child`
+ */
+
+html:not(.facing) .sheet:nth-child(odd) .main,
+html.facing .sheet:nth-child(even) .main {
+    right: @page-margin-outside;
+    left: @page-margin-inside;
+}
+
+html:not(.facing) .sheet:nth-child(even) .main,
+html.facing .sheet:nth-child(odd) .main {
+    left: @page-margin-outside;
+    right: @page-margin-inside;
+}
+
+// html:not(.facing) .sheet:nth-child(odd) .main:before,
+// html.facing .sheet:nth-child(even) .main:before {
+//     .x1();
+//     .w4();
+//     top: 0;
+//     left: 0;
+//     // transform: rotate(-90deg)
+// }
+// html:not(.facing) .sheet:nth-child(even) .main:before,
+// html.facing .sheet:nth-child(odd) .main:before {
+//     .x5();
+//     .w4();
+//     top : 0;
+//     left: 0;
+//     // transform: rotate(-90deg);
+// }
+// html:not(.facing) .sheet:nth-child(odd) .main:after,
+// html.facing .sheet:nth-child(even) .main:after {
+//     .x5();
+//     .w1();
+//     top : 0;
+//     left: 0;
+//     // transform: rotate(-90deg);
+// }
+// html:not(.facing) .sheet:nth-child(even) .main:after,
+// html.facing .sheet:nth-child(odd) .main:after {
+//     .x1();
+//     .w1();
+//     top : 0;
+//     left: 0;
+//     // transform: rotate(-90deg);
+// }

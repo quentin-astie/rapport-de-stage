@@ -1,0 +1,38 @@
+@import '../../../css/main.less';
+
+#flow-main .infos h1 { -webkit-flow-into: flow-title; flow-into: flow-title;}
+.flow-title { -webkit-flow-from: flow-title; flow-from: flow-title;}
+
+#flow-main { -webkit-flow-into: flow-main; flow-into: flow-main;}
+.flow-main { -webkit-flow-from: flow-main; flow-from: flow-main;}
+
+body *{
+  font-family: "Plain-Thin";
+  font-size:22pt;
+}
+
+.bloc:not(.prep){
+  border-top:1px solid black;
+}
+
+.prep span{
+  border:1px solid green;
+  border-radius:12pt;
+  padding:5pt;
+  color:green;
+  margin-top: 10pt;
+}
+
+.bloc span{
+  position: absolute;
+  top: 10%;
+}
+
+.bloc:nth-last-of-type(2) span{
+  color:blue;
+  border:1px solid blue;
+}
+
+.bloc:nth-last-of-type(1){
+  border: 0;
+}

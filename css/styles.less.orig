@@ -1,0 +1,586 @@
+a,
+p,
+dd,
+dt,
+dl,
+h1,
+h2,
+h3,
+h4,
+h5,
+hr,
+ul,
+li,
+article,
+strong,
+blockquote,
+footer,
+{color: black;}
+
+a {text-decoration: none;}
+
+.article {
+  padding: 6pt 6pt;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.bloc {
+  // margin-top: -10px;
+  // padding-top: 10px;
+}
+
+.sheet:nth-of-type(11) .flow-main,
+.sheet:nth-of-type(12) .flow-main,
+.sheet:nth-of-type(13) .flow-main
+
+{
+  border-top: 10px solid white;
+}
+
+/*article {
+  border-left: 1px solid black;}*/
+
+.rule--right{border-left: 1px solid black;}
+
+.rule--left{border-right: 1px solid black;}
+
+.push {page-break-before: always;}
+
+// .page {
+//   background-image: url(http://www.balsamine.be/images/damier.png);
+//   background-size: 10px;
+//   background-repeat: repeat;
+// }
+
+
+/*==============================================================*/
+/*______________________ Texte - Global ________________________*/
+/*==============================================================*/
+
+p {
+  vertical-align: baseline;
+  font-family: 'Ume double stroke master condensed';
+}
+
+p, .informations, .intro {
+  margin-bottom: 6pt;
+}
+
+.subhead {
+  page-break-inside: avoid;
+  page-break-after: avoid;
+  page-break-before: avoid;
+
+  margin-top: -16pt;
+  padding: 6pt 0pt 12pt 0pt;
+}
+
+/*
+---------------- début des titres
+
+*/
+
+h3, h4 {
+  page-break-inside: avoid;
+  page-break-after: avoid;
+  page-break-before: avoid;
+
+  margin: 0;
+  padding: 6pt 0pt;
+}
+
+//titres
+h1 {
+  font-family: 'Ume double stroke 12';
+  font-size: 40pt;
+  line-height: calc(~"4 x @line-height");
+  text-align: center;
+  letter-spacing: -0.08em;
+}
+
+// variations titres
+.stroke05 {
+  font-family: 'Ume double stroke 05';
+}
+
+.stroke07 {
+  font-family: 'Ume double stroke 07';
+}
+
+.stroke10 {
+  font-family: 'Ume double stroke 10';
+  letter-spacing: -0.08em;
+}
+
+.stroke12 {
+  font-family: 'Ume double stroke 12';
+  letter-spacing: -0.08em;
+}
+
+// auteurs
+h2 {
+  font-family: 'Ume double stroke 07';
+  font-size: 24pt;
+  line-height: calc(~"1.5 x @line-height");
+  padding: 10pt 0pt 0pt 0pt;
+}
+
+// sous-titres
+h3 {
+  font-family: 'Ume double stroke info pratique';
+  font-size: 13pt;
+  line-height: calc(~"1.5 x @line-height");
+}
+
+
+h4 {
+  font-family: 'Ume double stroke info pratique';
+  font-size: 9pt;
+  line-height: calc(~"-1.5 x @line-height");
+}
+
+//cas particuliers
+.maitre{
+  font-family: 'ume double stroke 10';
+  letter-spacing: 0em;
+}
+
+.contemporain{
+  font-family: 'ume double stroke 10';
+  letter-spacing: -0.08em;
+}
+
+.orshould{
+  font-family: 'ume double stroke 07';
+  letter-spacing: 0em;
+  padding-right: 5pt;
+}
+
+.coulisse {
+  font-family: 'ume double stroke 12';
+  letter-spacing: -0.08em;
+}
+
+.fortunes {
+  font-family: 'ume double stroke 10';
+  letter-spacing: -0.08em;
+}
+
+
+/*
+---------------- fin des titres
+*/
+
+
+hr {
+  visibility: hidden;
+}
+
+a{
+  text-decoration: none;
+  // text-decoration-color: #ff546d;
+}
+
+ul {
+  list-style: none;
+  font-family: 'Ume double stroke master condensed';
+  padding-top: @line-height;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 75pt /*100px*/ ;
+  max-height: 45pt /*60px*/ ;
+  background-color: white;
+  // -webkit-filter: grayscale(1);
+  // filter: grayscale(1);
+}
+
+.united {
+  height: 25px;
+  width: 95px;
+  float: left;
+  padding-right: 6px;
+  padding-bottom: 14px;
+  margin-top: -8px;
+}
+
+.logo {
+  max-height: 22.5pt /*30px*/;
+  outline: none;
+  margin-top: 0;
+  margin-left: calc(~"2 x @line-height");
+  margin-bottom: @line-height;
+}
+
+// autres images
+.autre {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  width: auto;
+}
+
+
+
+/*==============================================================*/
+/*__________________________ PARTIE 1 __________________________*/
+/*___________________________ Edito ____________________________*/
+/*==============================================================*/
+
+.edito {
+  padding: 12pt;
+  margin-bottom: 10pt;
+  box-sizing: border-box;
+  border-bottom: 1.5px solid black;
+  background-color: white
+}
+
+.edito h1 {
+  font-family: 'Ume double stroke 12';
+  font-size: 40pt;
+  line-height: 35pt;
+  text-align: left;
+  padding-bottom: 12pt;
+  padding-left: 12pt;
+}
+.edito .txtedito1 {
+  margin-bottom: 9pt;
+}
+
+.txtedito1 {
+  font-family: 'Ume double stroke 10';
+  font-size: 19.5pt;
+  line-height: 22pt;
+padding-left: 12pt;
+      // background-image: url(http://balsamine.be//theme/imgs/damier-gradient.png);
+}
+.txtedito1 p + p {
+
+}
+.page {
+   // background-image: url(../../images/fond-damier.png);
+   background-size: 100%;
+}
+
+.edito h2 {
+  font-family: 'Ume double stroke 07';
+  font-size: 20pt;
+  line-height: 20pt;
+  text-align: center;
+  padding: 10pt 0pt 0pt 0pt;
+}
+.edito h2 + h2 {
+  padding: 0pt 0pt 0pt 0pt;
+}
+.edito h2 + p {
+  margin-top: 12pt;
+}
+.txtedito2 {
+  font-family: 'Ume double stroke 10';
+  font-size: 12pt;
+  line-height: 15pt;
+}
+
+.plus-bas {
+  padding-top: 10pt;
+}
+
+// .edito p.txtedito1 + p.txtedito1 {
+//   text-indent: 24pt;
+// }
+
+
+
+/*==============================================================*/
+/*__________________________ PARTIE 2 __________________________*/
+/*___________________________ Saison ___________________________*/
+/*==============================================================*/
+
+
+
+.start-saison {
+  page-break-before: always;
+}
+
+// Contient : Dates + End, Event-type, Time.
+.informations {
+  font-family: 'Ume double stroke info pratique';
+  font-size: 12pt;
+  line-height: 17.5pt;
+  padding: 4pt 0pt;
+  margin-left:30pt;
+}
+.premiere {
+  padding-bottom: 0pt !important;
+}
+
+.subhead {
+  font-family: 'Ume double stroke info pratique';
+  font-size: 9pt;
+  line-height: @line-height;
+  margin-left: 0pt;
+}
+
+.intro {
+  font-family: 'Ume double stroke master condensed';
+  font-size: 13pt;
+  line-height: 15.5pt;
+}
+
+strong {
+  font-weight: bolder;
+  font-family: 'Ume double stroke info pratique';
+}
+
+blockquote {
+  font-family: 'Ume double stroke master condensed';
+  font-size: 11pt;
+  line-height: 13pt;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 6pt;
+}
+blockquote p {
+  margin-bottom: 0pt;
+}
+blockquote {
+  margin-bottom: 10pt;
+}
+footer {
+  font-family: 'Ume double stroke master expanded';
+  font-size: 11pt;
+  line-height: @line-height;
+  padding: 0;
+}
+.reduit {
+  margin-top: 60pt !important;
+  display: block !important;
+}
+
+dl {
+<<<<<<< HEAD
+  line-height: 7.5pt;
+=======
+  line-height: 6pt;
+>>>>>>> f3f5c14c816284028bae7473cbab915b9d4bf0b6
+}
+
+dt {
+  font-family: 'Ume double stroke master condensed';
+  font-size: 6.5pt;
+  text-transform: uppercase;
+  padding: 1px 5px;
+  display: inline;
+  vertical-align: baseline;
+  border: 1px solid black;
+  border-radius: 16px;
+  background: white;
+}
+
+dd {
+  font-family: 'Ume double stroke master expanded';
+  font-size: 7.5pt;
+  display: inline;
+  margin-left: -5px;
+
+}
+
+.production {
+  font-family: 'Ume double stroke master condensed';
+  font-size: 8pt;
+  line-height: 11pt;
+  padding-top: 6pt;
+  margin-left: 30pt;
+}
+
+
+/*==============================================================*/
+/*__________________________ PARTIE 3 __________________________*/
+/*______________________ Infos Pratiques _______________________*/
+/*==============================================================*/
+
+.start-info {
+  page-break-before: always;
+}
+
+.info-pratique {
+  padding: 10pt 10pt 7pt 10pt;
+  margin-bottom: 10pt;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  background-color: white;
+  margin: 0;
+}
+// .info-pratique p {
+//   -webkit-hyphens: auto;
+//          -moz-hyphens: auto;
+//               hyphens: auto;
+//               -webkit-hyphenate-limit-before: 2; /* 2 caractères minimum en fin de ligne, donc en début de mot */
+// -webkit-hyphenate-limit-after:  2; /* 3 caractères minimum en début de ligne, donc en fin de mot */
+// -webkit-hyphenate-limit-lines:  4; /* 4 lignes consecutives max */
+// }
+
+.info-pratique h1 {font-family: 'ume double stroke 12'; font-size: 25pt;}
+.info-pratique h2 {font-size: 15pt; padding: 12pt 0pt 6pt 0pt; text-align: left; font-weight: bolder;}
+// .info-pratique h2:nth-of-type(1) {padding: 12pt 0pt 0pt 0pt;}
+.info-pratique h3 {font-family: 'Ume double stroke master condensed'; font-size: 10pt; line-height: 12.5pt;}
+
+.exceptions-info {font-family: 'ume double stroke 12'; font-size: 25pt; padding-bottom: 12pt;}
+
+.texteinfo{
+  font-family: 'Ume double stroke master condensed';
+  font-size: 10pt;
+  line-height: 12.5pt;
+}
+
+.pass{
+  max-width: 181px;
+  max-height: 830px;
+  padding: 0pt 5pt;
+}
+
+.map {
+  // max-width: 500px;
+  // max-height: 453px;
+  // padding: 13pt 0pt;
+  // background-color: transparent;
+  // background-image: url("../../images/map.svg");
+  background-image: url(http://www.balsamine.be/images/map.svg);
+  background-repeat: no-repeat;
+  border: 0px solid black;
+  background-size: 100%;
+  background-position: -30px 10px;
+  }
+
+
+.tarif{
+  font-family: 'Ume double stroke master condensed';
+  font-size: 10pt;
+  line-height: 12.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: 150px;
+  padding: 1.5px 8px;
+  display: block;
+  vertical-align: baseline;
+  border: 0px solid black;
+  background: linear-gradient(135deg, #b7b7b7 0%,#ffffff 100%);
+  border-radius: 24px;
+  text-align: center;
+  margin: 12pt 12pt 0pt 12pt;
+
+  // background-color: rgba(0, 0, 0, 0);
+  // background-image: linear-gradient (top right, yellow, 0%, transparent 70%);
+  // background-origin: padding-box;
+}
+
+.prix{
+  font-family: 'Ume double stroke master expanded';
+  font-size: 16pt;
+  display: block;
+  text-align: center;
+  margin-top: 6pt;
+}
+
+.groupes {
+  font-family: 'Ume double stroke master condensed';
+  font-size: 8pt;
+  line-height: 12.5pt;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: 150px;
+  padding: 1.5px 8px;
+  display: block;
+  vertical-align: baseline;
+  border-bottom: 0px solid black;
+  background: linear-gradient(135deg, #ffffff 0%, #b7b7b7  100%);
+  border-radius: 24px;
+  text-align: center;
+  margin: 12pt 12pt 0pt 12pt;
+}
+
+.footnote {
+  font-family: 'Ume double stroke master expanded';
+  font-size: 11pt;
+  line-height: 12.5pt;
+  display: inline;
+}
+
+.center {
+  font-family: 'Ume double stroke master expanded';
+  font-size: 11pt;
+  line-height: 12.5pt;
+  display: block;
+  text-align: center;
+}
+
+.info-pratique dt {
+  font-family: 'Ume double stroke master condensed';
+  font-size: 9pt;
+  text-transform: uppercase;
+  padding: 1.5px 8px;
+  // display: block;
+  vertical-align: baseline;
+  border: 0px solid black;
+  background: linear-gradient(135deg, #b7b7b7 0%,#ffffff 100%);
+  border-radius: 16px;
+  margin-top: 11pt !important;
+}
+
+.info-pratique dd {display: block;  margin-bottom: 0pt !important;
+}
+
+// .info-pratique dd + dd {margin-bottom: 0pt !important}
+
+.role{
+  font-family: 'Ume double stroke master condensed';
+  font-size: 9pt;
+  line-height: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  width: 150px;
+  padding: 1.5px 8px;
+  display: block;
+  vertical-align: baseline;
+  border: 0px solid ;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #b7b7b7 0%,#ffffff 100%);
+  text-align: center;
+  margin: 0pt 12pt;
+}
+
+.acteur {
+  font-family: 'Ume double stroke master expanded';
+  font-size: 10pt;
+  display: block;
+  text-align: center;
+  padding: 0pt 0pt  6pt 0pt;
+  margin-top: 6pt;
+}
+
+.avertissement {
+  font-family: 'ume double stroke 12';
+  // transform: rotate(-90deg);
+  font-size: 9pt;
+  line-height: 11pt;
+  transform-origin: top left;
+  // margin-top: 760pt;
+  text-align: left;
+  // width: 260px;
+  // margin-left: 40pt
+  width: 240pt;
+  margin-top: -30pt;
+}
+
+.sticker-fond {
+  background: url('../../decoupes/cahier-sticker.svg')
+}
+.damier-fond {
+  background-image: url(../../images/fond-damier.png);
+  background-size: 100%
+}
