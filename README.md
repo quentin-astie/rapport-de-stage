@@ -1,6 +1,3 @@
-Quick start
-===========
-
 This is my interning report at OSP using a boilerplate for the 17-18 program of la Balsamine Theatre, based on
 HTML2print.
 
